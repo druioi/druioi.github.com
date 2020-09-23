@@ -1,0 +1,60 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: #131419;
+}
+
+#form {
+  width: 100vw;
+  height: auto;
+}
+
+#form input[type = number] {
+    display: block;
+    width: 80vw;
+    height: 120px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / .25);
+    background: #1c1c24;
+    color: #fff;
+    font-size: 6em;
+    text-align: center;
+    font-family: monospace;
+    border: 0;
+    position: relative;
+}
+
+#form::after {
+    content: 'X';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    top: 50px;
+    left: 7vw;
+    font-size: 4rem;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    color: #1c1c24;
+  }
+
+  #form::before {
+      content: 'Y';
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: #fff;
+      top: 190px;
+      left: 7vw;
+      font-size: 4rem;
+      font-family: monospace;
+      text-align: center;
+      border-radius: 50%;
+      color: #1c1c24;
+      z-index: 10;
+    }
